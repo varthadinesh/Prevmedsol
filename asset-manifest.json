@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/Prevmedsol/static/css/main.31d6cfe0.css",
+    "main.js": "/Prevmedsol/static/js/main.ebe3fc49.js",
+    "index.html": "/Prevmedsol/index.html",
+    "main.ebe3fc49.js.map": "/Prevmedsol/static/js/main.ebe3fc49.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.ebe3fc49.js"
+  ]
+}
