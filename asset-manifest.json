@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/Prevmedsol/static/css/main.31d6cfe0.css",
-    "main.js": "/Prevmedsol/static/js/main.6a991af2.js",
+    "main.css": "/Prevmedsol/static/css/main.3c82a447.css",
+    "main.js": "/Prevmedsol/static/js/main.abe7a208.js",
     "index.html": "/Prevmedsol/index.html",
-    "main.6a991af2.js.map": "/Prevmedsol/static/js/main.6a991af2.js.map"
+    "main.3c82a447.css.map": "/Prevmedsol/static/css/main.3c82a447.css.map",
+    "main.abe7a208.js.map": "/Prevmedsol/static/js/main.abe7a208.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.6a991af2.js"
+    "static/css/main.3c82a447.css",
+    "static/js/main.abe7a208.js"
   ]
 }
