@@ -5,7 +5,7 @@ export default function Navbar() {
   const location = useLocation();
 
   return (
-    <nav className="navbar navbar-dark bg-dark">
+    <nav className="navbar navbar-dark bg-dark sticky-top">
       <div className="container-fluid m-10">
         <a className="navbar-brand " href="/">
           <i className="bi bi-heart-pulse-fill"></i>
