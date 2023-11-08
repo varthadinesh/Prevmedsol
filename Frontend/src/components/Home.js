@@ -1,5 +1,4 @@
 import React from "react";
-import medicalbg from '../images/medical-bg2.jpg';
 import engageplan from "../images/engageplan.webp";
 import empowerplan from "../images/empowerplan.webp";
 import enhanceplan from "../images/enhanceplan.webp";
@@ -7,9 +6,9 @@ import enhanceplan from "../images/enhanceplan.webp";
 const Home = () => {
   return (
     <>
-    <img src={medicalbg} alt="medial bg" className="w-100 img-fluid position-absolute opacity-75" 
-    style={{height:"100vh", backgroundPosition:"center",backgroundRepeat:"no-repeat"}}/>
-      <div className="position-absolute" style={{margin:"40px 150px 60px 90px"}}>
+      {/* <img src={medicalbg} alt="medial bg" width="100%" height="550px" className="opacity-75"/> */}
+      <div className="homemain">
+        <div className="p-5">
         <h1 className="text-white fw-bolder" style={{fontSize:"60px",textShadow:"2px 3px 2px black"}}>Engage<br/>Empower<br/>Enhance</h1>
         <div className="mt-5 text-white w-50">
                 <h4>Because those who made us deserve to age magnificently from the comfort of their own homes.</h4>
@@ -21,7 +20,9 @@ const Home = () => {
             <div className="col-3"><h3 className="fs-2 fw-bold">500<sup>+</sup></h3><h5>Lives Saved</h5></div>
             <div className="col-3"><h3 className="fs-2 fw-bold">2000<sup>+</sup></h3><h5>Events Organised</h5></div>
         </div>
-        <div>
+        </div>
+      </div>
+      <div className="m-5 p-5">
             <div className="d-flex justify-content-between mt-5 mb-3">
             <h3>Get the care plan your parents need</h3>
             <h6>We have all their needs covered.</h6>
@@ -44,8 +45,6 @@ const Home = () => {
                 </div>
             </div>
         </div>
-
-      </div>
     </>
   );
 };
