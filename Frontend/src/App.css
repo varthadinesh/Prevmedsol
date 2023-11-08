@@ -17,3 +17,9 @@
 .menumain .list-group a li:hover{
     background-color: rgb(187, 203, 234);
 }
+.homemain{
+    background-image: url("../src/images/medical-bg2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+}
