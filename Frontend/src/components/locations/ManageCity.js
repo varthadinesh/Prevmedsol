@@ -129,6 +129,7 @@ const Managecity = () => {
                 </td>
                 <td>{index+1}</td>
                 <td className="hidden-480">{item.state}</td>
+                <td></td>
                 <td>
                   <div className="hidden-sm hidden-xs action-buttons d-flex justify-content-around">
                     
