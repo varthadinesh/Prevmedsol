@@ -14,7 +14,7 @@ const Patientappointment = () => {
     axios
     .get("http://localhost:8080/patientappointment")
     .then((res) => {
-      console.log(res.data);
+      // console.log(res.data);
       res.data.data2.map((item1)=>{
         res.data.data1.map((item2)=>{
           if((item2.firstname+" "+item2.lastname)==item1.patient){
@@ -27,6 +27,8 @@ const Patientappointment = () => {
     .catch((err) => console.log(err));
   },[]);
 console.log(info1);
+console.log(info2);
+
   return (
     <div className="d-flex ">
       <div className="col-2 bg-light p-0">
@@ -65,7 +67,7 @@ console.log(info1);
               <select
                 name="dynamic-table_length"
                 aria-controls="dynamic-table"
-                class="form-select"
+                className="form-select"
               >
                 <option value="10">10</option>
                 <option value="25">25</option>
@@ -79,7 +81,7 @@ console.log(info1);
                 type="search"
                 placeholder=""
                 aria-controls="dynamic-table"
-                class="form-control"
+                className="form-control"
               />
             </div>
           </div>
@@ -91,7 +93,7 @@ console.log(info1);
           >
             <thead>
               <tr role="row">
-                <th className="center sorting_disabled" rowspan="1" colspan="1">
+                <th className="center sorting_disabled" rowSpan="1" colSpan="1">
                   <label className="pos-rel">
                     <input type="checkbox" className="ace" />
                     <span className="lbl"></span>
@@ -99,58 +101,58 @@ console.log(info1);
                 </th>
                 <th
                   className="sorting"
-                  tabindex="0"
+                  tabIndex="0"
                   aria-controls="dynamic-table"
-                  rowspan="1"
-                  colspan="1"
+                  rowSpan="1"
+                  colSpan="1"
                   aria-label="Appointment ID: activate to sort column ascending"
                 >
                   Appointment ID
                 </th>
                 <th
                   className="sorting"
-                  tabindex="0"
+                  tabIndex="0"
                   aria-controls="dynamic-table"
-                  rowspan="1"
-                  colspan="1"
+                  rowSpan="1"
+                  colSpan="1"
                   aria-label="Patient Name: activate to sort column ascending"
                 >
                  Patient Name
                 </th>
                 <th
                   className="sorting"
-                  tabindex="0"
+                  tabIndex="0"
                   aria-controls="dynamic-table"
-                  rowspan="1"
-                  colspan="1"
+                  rowSpan="1"
+                  colSpan="1"
                   aria-label="Phone:activate to sort column ascending"
                 >
                   Phone
                 </th>
                 <th
                   className="hidden-480 sorting"
-                  tabindex="0"
+                  tabIndex="0"
                   aria-controls="dynamic-table"
-                  rowspan="1"
-                  colspan="1"
+                  rowSpan="1"
+                  colSpan="1"
                   aria-label="Gender: activate to sort column ascending"
                 >
                   Gender
                 </th>
                 <th
                   className="hidden-480 sorting"
-                  tabindex="0"
+                  tabIndex="0"
                   aria-controls="dynamic-table"
-                  rowspan="1"
-                  colspan="1"
+                  rowSpan="1"
+                  colSpan="1"
                   aria-label="Appointment Date: activate to sort column ascending"
                 >
                   Appointment Date
                 </th>
                 <th
                   className="hidden-480 sorting_disabled"
-                  rowspan="1"
-                  colspan="1"
+                  rowSpan="1"
+                  colSpan="1"
                   aria-label="Status"
                 >
                   Status
@@ -160,7 +162,6 @@ console.log(info1);
             <tbody>
               {
                 info2.map((item,index)=>(
-                  info1.map((item2,index2)=>(
                   <tr key={index}>
                     <td>
                       <label className="pos-rel">
@@ -170,12 +171,11 @@ console.log(info1);
                     </td>
                     <td>{index+1}</td>
                     <td>{item.patient}</td>
-                    <td>{item2.phone}</td>
-                    <td>{item2.gender}</td>
+                    <td>{info1[index].phone}</td>
+                    <td>{info1[index].gender}</td>
                     <td>{item.date}</td>
-                    <td>{item2.status}</td>
+                    <td>{info1[index].status}</td>
                   </tr>
-                  ))
                 ))
               }
             </tbody>
@@ -188,19 +188,19 @@ console.log(info1);
               <label className="">Showing 0 to 0 of 0 entries</label>
             </div>
             <div>
-              <ul class="pagination">
-                <li class="page-item">
-                  <a class="page-link" href="#">
+              <ul className="pagination">
+                <li className="page-item">
+                  <a className="page-link" href="#">
                     Previous
                   </a>
                 </li>
-                <li class="page-item active">
-                  <a class="page-link" href="#">
+                <li className="page-item active">
+                  <a className="page-link" href="#">
                     1
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">
+                <li className="page-item">
+                  <a className="page-link" href="#">
                     Next
                   </a>
                 </li>
@@ -228,7 +228,7 @@ console.log(info1);
               <select
                 name="dynamic-table_length"
                 aria-controls="dynamic-table"
-                class="form-select"
+                className="form-select"
               >
                 <option value="10">10</option>
                 <option value="25">25</option>
@@ -242,7 +242,7 @@ console.log(info1);
                 type="search"
                 placeholder=""
                 aria-controls="dynamic-table"
-                class="form-control"
+                className="form-control"
               />
             </div>
           </div>
@@ -254,7 +254,7 @@ console.log(info1);
           >
             <thead>
               <tr role="row">
-                <th className="center sorting_disabled" rowspan="1" colspan="1">
+                <th className="center sorting_disabled" rowSpan="1" colSpan="1">
                   <label className="pos-rel">
                     <input type="checkbox" className="ace" />
                     <span className="lbl"></span>
@@ -262,58 +262,58 @@ console.log(info1);
                 </th>
                 <th
                   className="sorting"
-                  tabindex="0"
+                  tabIndex="0"
                   aria-controls="dynamic-table"
-                  rowspan="1"
-                  colspan="1"
+                  rowSpan="1"
+                  colSpan="1"
                   aria-label="Appointment ID: activate to sort column ascending"
                 >
                   Appointment ID
                 </th>
                 <th
                   className="sorting"
-                  tabindex="0"
+                  tabIndex="0"
                   aria-controls="dynamic-table"
-                  rowspan="1"
-                  colspan="1"
+                  rowSpan="1"
+                  colSpan="1"
                   aria-label="Patient Name: activate to sort column ascending"
                 >
                  Patient Name
                 </th>
                 <th
                   className="sorting"
-                  tabindex="0"
+                  tabIndex="0"
                   aria-controls="dynamic-table"
-                  rowspan="1"
-                  colspan="1"
+                  rowSpan="1"
+                  colSpan="1"
                   aria-label="Phone:activate to sort column ascending"
                 >
                   Phone
                 </th>
                 <th
                   className="hidden-480 sorting"
-                  tabindex="0"
+                  tabIndex="0"
                   aria-controls="dynamic-table"
-                  rowspan="1"
-                  colspan="1"
+                  rowSpan="1"
+                  colSpan="1"
                   aria-label="Gender: activate to sort column ascending"
                 >
                   Gender
                 </th>
                 <th
                   className="hidden-480 sorting"
-                  tabindex="0"
+                  tabIndex="0"
                   aria-controls="dynamic-table"
-                  rowspan="1"
-                  colspan="1"
+                  rowSpan="1"
+                  colSpan="1"
                   aria-label="Appointment Date: activate to sort column ascending"
                 >
                   Appointment Date
                 </th>
                 <th
                   className="hidden-480 sorting_disabled"
-                  rowspan="1"
-                  colspan="1"
+                  rowSpan="1"
+                  colSpan="1"
                   aria-label="Center"
                 >
                   Center
@@ -360,19 +360,19 @@ console.log(info1);
               <label className="">Showing 2 to 2 of 2 entries</label>
             </div>
             <div>
-              <ul class="pagination">
-                <li class="page-item">
-                  <a class="page-link" href="#">
+              <ul className="pagination">
+                <li className="page-item">
+                  <a className="page-link" href="#">
                     Previous
                   </a>
                 </li>
-                <li class="page-item active">
-                  <a class="page-link" href="#">
+                <li className="page-item active">
+                  <a className="page-link" href="#">
                     1
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">
+                <li className="page-item">
+                  <a className="page-link" href="#">
                     Next
                   </a>
                 </li>
