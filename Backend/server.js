@@ -40,7 +40,18 @@ app.post('/patient', (req, res) => {
         if (data.length > 0) {
             return res.json("Success");
         } else {
-            return res.json("Fail");
+            const sql1 = "SELECT * FROM registeredusers WHERE `email` = ? AND `password` = ?";
+            db.query(sql1, [req.body.username, req.body.password], (err1, data1) => {
+                if(err1){
+                    return res.json("Error");
+                }
+                if(data1.length > 0){
+                    return res.json("Success");
+                }
+                else{
+                    return res.json("Fail");
+                }
+            })
         }
     })
 })
