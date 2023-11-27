@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Prevmedsol/static/css/main.99d404af.css",
-    "main.js": "/Prevmedsol/static/js/main.3e915738.js",
+    "main.js": "/Prevmedsol/static/js/main.1d4c3414.js",
     "static/media/medical-bg2.jpg": "/Prevmedsol/static/media/medical-bg2.1f7e174d4c46d980887f.jpg",
     "static/media/benifit2.webp": "/Prevmedsol/static/media/benifit2.bd16ff314466fff0cdd4.webp",
     "static/media/benifit5.webp": "/Prevmedsol/static/media/benifit5.7ca4d16f4a37cb1f0a08.webp",
@@ -16,10 +16,10 @@
     "static/media/engageplan.webp": "/Prevmedsol/static/media/engageplan.2a04f637056480854010.webp",
     "index.html": "/Prevmedsol/index.html",
     "main.99d404af.css.map": "/Prevmedsol/static/css/main.99d404af.css.map",
-    "main.3e915738.js.map": "/Prevmedsol/static/js/main.3e915738.js.map"
+    "main.1d4c3414.js.map": "/Prevmedsol/static/js/main.1d4c3414.js.map"
   },
   "entrypoints": [
     "static/css/main.99d404af.css",
-    "static/js/main.3e915738.js"
+    "static/js/main.1d4c3414.js"
   ]
 }
