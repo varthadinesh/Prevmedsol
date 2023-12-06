@@ -106,6 +106,7 @@ CREATE TABLE IF NOT EXISTS packages (
     packagename VARCHAR(60) NOT NULL,
     packagedescription TINYTEXT NOT NULL,
     amount SMALLINT(5) NOT NULL,
+    imageurl TINYTEXT NULL,
     service1 VARCHAR(60) NULL,
     service2 VARCHAR(60) NULL,
     service3 VARCHAR(60) NULL,
