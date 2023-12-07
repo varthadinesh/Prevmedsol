@@ -9,6 +9,7 @@ const Addpackage = () => {
     packagename: "",
     description: "",
     amount: "",
+    imageurl: "",
     service1: "",
     service2: "",
     service3: "",
@@ -122,6 +123,22 @@ const Addpackage = () => {
                       className="col-xs-10 col-sm-5 form-control"
                       id="amount"
                       name="amount"
+                      onChange={handleInput}
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="form-group d-md-flex">
+                  <label className="col-sm-4 text-md-end text-primary">
+                    {" "}
+                    Image URL{" "}
+                  </label>
+                  <div className="col-sm-8">
+                    <textarea
+                      placeholder="Image URL"
+                      className="col-xs-10 col-sm-5 form-control"
+                      id="imageurl"
+                      name="imageurl"
                       onChange={handleInput}
                       required
                     />
