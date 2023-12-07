@@ -500,11 +500,12 @@ app.delete('/labagents', (req, res) => {
 // add package sql
 app.post('/addpackage', (req, res) => {
  
-    const sql = "INSERT INTO packages (`packagename`,`packagedescription`,`amount`,`service1`,`service2`,`service3`,`service4`,`service5`,`service6`,`service7`,`service8`,`service9`,`service10` ) VALUES (?)";
+    const sql = "INSERT INTO packages (`packagename`,`packagedescription`,`amount`,`imageurl`,`service1`,`service2`,`service3`,`service4`,`service5`,`service6`,`service7`,`service8`,`service9`,`service10` ) VALUES (?)";
     const values = [
         req.body.packagename,
         req.body.description,
         req.body.amount,
+        req.body.imageurl,
         req.body.service1,
         req.body.service2,
         req.body.service3,
