@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.otp_num::-webkit-inner-spin-button,
+.otp_num::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+.success,
+.error,
+.verification {
+  display: none;
+}
+
+.col-2 {
+  background-color: #97bc62ff;
+  color: white;
+  min-height: 100vh;
+}
+
+.rs1_accordion .accordion {
+  --bs-accordion-active-bg: white;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.menumain .accordion {
+  --bs-accordion-btn-bg: #97bc62ff;
+  --bs-accordion-btn-color: #100f10;
+  --bs-accordion-active-bg: #97bc62ff;
+  --bs-accordion-active-color: #100f10;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.menumain {
+  position: sticky;
+  top: 60px;
+}
+body {
+  overflow-y: scroll;
+}
+
+/* scroll bar css  */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(78, 165, 78);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #dad7d7;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: seagreen;
+}
+
+.plansdiv img {
+  width: 350px;
+  height: 470px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.plansdiv .m-3 {
+  transition: transform 0.2s;
+}
+.plansdiv .m-3:hover {
+  transform: scale(1.1);
+}
+
+/* .navbar{
+    height: 60px;    
+} */
+.navbar-nav .nav-link:hover {
+  color: red;
+}
+.menumain .list-group a li:hover {
+  background-color: rgb(187, 203, 234);
+}
+.homemain{
+  background-image: url("../src/Admincomponents/images/Health-Insurance.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  object-fit: cover;
+  height: 93vh;
+  width: 100%;
+  position: relative;
+}
+
+.homeheading{
+font-size: 4.5vw;
+text-shadow: 2px 3px 2px black;
+}
+.homesideheading{
+  font-size: 1.8vw;
+}
+
+marquee{
+  position: absolute;
+  z-index: 1;
+  bottom: 5%;
+  opacity: 0.7;
+}
+
+.plansmaindiv .card {
+  border-radius: 20px;
+  width: 29%;
+}
+#engback {
+  background-color: beige;
+  color: black;
+}
+
+#engbtn {
+  background-color: black;
+  color: beige;
+  border: none;
+}
+
+#engback:hover {
+  background-color: black;
+  color: beige;
+}
+#engback:hover #engbtn {
+  background-color: beige;
+  color: black;
+}
+.benifitimgs {
+  width: 310px;
+  height: 250px;
+  border-radius: 20px;
+}
+.benifitsdiv .card {
+  width: 350px;
+  border: 5px solid white;
+}
+.benifitsdiv .card:hover {
+  box-shadow: 2px 2px 4px 6px rgb(235, 235, 235);
+  cursor: pointer;
+}
+.benifitsmaindiv {
+  padding: 30px 0px 30px 0px;
+}
+.planbannerdiv {
+  background-image: url("../src/Admincomponents/images/prevmedsolhome.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height:320px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-box-shadow:12px 29px 81px 0px rgba(31, 98, 14, 0.75);
+  -moz-box-shadow: 12px 29px 81px 0px rgba(35, 113, 25, 0.75);
+  box-shadow: 20px 60px 71px 60px rgba(74, 157, 80, 0.75);
+}
+/* .plansmaindiv{
+    background-color: #3f3639;
+} */
+
+.listdiv {
+  height: 250px;
+  overflow-y: auto;
+}
+
+.navbar {
+  background-color: #2a4b2a;
+}
+
+/* / History1 css / */
+
+.historybg{
+    background-color: rgb(243, 241, 241);
+}
+
+  .historyul li a {
+    background-color: #509c52;
+    color: black;
+    padding: 6px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .historyul li a:hover, .historyul li a.active {
+    background-color: #85d487;
+    color: black;
+  }
+
+  .accordion-header span{
+    font-size: 1.2vw;
+  }
+  
+  .menumain .dashboardh2::after {
+    background-image: initial;
+  }
+  
+  .menumain .dashboardh2:not(.collapsed)::after {
+    background-image: initial;
+  }
