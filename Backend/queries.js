@@ -455,7 +455,7 @@ const createReviewSystem3Query = `
 const createHistory1TableQuery =`
 CREATE TABLE IF NOT EXISTS emrhistory1 (
     history1_id INT NOT NULL,
-    date DATE NOT NULL,
+    comlaint_date DATE NOT NULL,
     present_illness VARCHAR(255) NULL,
     onset VARCHAR(60) NULL,
     duration VARCHAR(45) NULL,
